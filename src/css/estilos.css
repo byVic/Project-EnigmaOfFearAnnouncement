@@ -1,0 +1,162 @@
+body {
+    font-family: 'Poppins';
+}
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header .logo{
+    width: 100px;
+    padding-top: 18px;
+    cursor:pointer
+}
+
+.header .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header nav li a{
+    font-weight: bold;
+    color:#ffffff;
+    font-size: 25px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.header nav li a:hover {
+    background-color:aqua;
+    color:black
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0px; 
+}
+
+.container .agentes{
+    max-width: 601px;
+    padding: 0px 0px 0px;
+}
+
+.container .enigmaoffear {
+    max-width: 500px;
+}
+
+.container .info{
+    color:rgb(23, 221, 227);
+    width: 500px;
+    font-size: 17px;
+}
+.container .botao-trailer{
+    background-color: rgb(19, 19, 19);
+    color:aqua;
+    padding: 25px;
+    font-size: 15px;
+    border-radius:20px;
+    font-weight: bold;
+    cursor: pointer;
+    border:none;
+    transition: 0.4s all ease-in-out;
+    padding: 20px 20px 20px;
+}
+
+.container .botao-steam{
+    background-color: rgb(19, 19, 19);
+    color:aqua;
+    padding: 25px;
+    font-size: 15px;
+    border-radius:20px;
+    font-weight: bold;
+    cursor: pointer;
+    border:none;
+    transition: 0.4s all ease-in-out;
+    padding: 20px 20px 20px;
+}
+    
+.container .botao-steam:hover{
+    transform:scale(1.1)
+}
+
+.container .botao-trailer:hover{
+    transform:scale(1.1)
+}
+
+.fundo-video{
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.fundo-video .videouau{
+    height: 100vh;
+    width: 100vw;
+}
+
+.fundo-video::after{
+    content: "";
+    background-color:black;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.modal{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color:rgba(16, 15, 15, 0.7);
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.fechar-modal {
+    background-color: black;
+    color: aqua;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.modal iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.aberto {
+    opacity: 1;
+    visibility: visible;
+}
